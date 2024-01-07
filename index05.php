@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interação com Formulários(input's)</title>
+    <title>Transferência de Dados</title>
     <link rel="stylesheet" href="index05.css">
 </head>
-
 <body>
     <header>
-        <h1>Apresente-se a nós?</h1>
+    <h1>Transferência Recebido do 'Form Action Method'</h1>
     </header>
-    <section>
-        <form action="php.com" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id=""><br>
-            <label for="sobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="">
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
+    <main>
+        <?php 
+            // var_dump($_REQUEST) // $_REQUEST - é uma maneira universal de transferência de dados.
+            $nome = $_REQUEST ["nome"] ?? "Sem dígitos";
+            $sobrenome = $_REQUEST ["sobrenome"] ?? "Sem dígitos";
+            echo "<p> É um prazer te conhecer <strong>$nome $sobrenome</strong>!</p>"
+        ?>
+        <a href="javascript:history.go(-1)">Voltar para a página anterior.</a>
+    </main>
 </body>
-
 </html>
