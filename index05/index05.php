@@ -15,7 +15,7 @@
             // var_dump($_REQUEST) // $_REQUEST - é uma maneira universal de transferência de dados.
             $nome = $_REQUEST ["nome"] ?? "Sem dígitos";
             $sobrenome = $_REQUEST ["sobrenome"] ?? "Sem dígitos";
-            echo "<p> É um prazer te conhecer <strong>$nome $sobrenome</strong>!</p>"
+            echo "<p> É um prazer te conhecer <strong>$nome $sobrenome</strong>!</p>";
         ?>
         <a href="javascript:history.go(-1)">Voltar para a página anterior.</a>
     </main>
