@@ -1,2 +1,2 @@
 # PHP-com-curso-em-video
- Aprendo PHP online
+ Aprendo PHP online curso-em-video
